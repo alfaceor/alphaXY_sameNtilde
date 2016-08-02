@@ -1,0 +1,189 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5200,        179]
+NotebookOptionsPosition[      4283,        141]
+NotebookOutlinePosition[      4615,        156]
+CellTagsIndexPosition[      4572,        153]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Sin", "[", "1.7", "]"}]], "Input",
+ CellChangeTimes->{{3.663673951954239*^9, 3.663673955030951*^9}}],
+
+Cell[BoxData["0.9916648104524686`"], "Output",
+ CellChangeTimes->{3.663673955774642*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"1.05263", "*", 
+  RowBox[{"Sin", "[", "1.7", "]"}]}]], "Input",
+ CellChangeTimes->{{3.663673968065531*^9, 3.663673971474127*^9}, {
+  3.663674024257399*^9, 3.6636740256029882`*^9}}],
+
+Cell[BoxData["1.043856129426582`"], "Output",
+ CellChangeTimes->{3.663673972492961*^9, 3.663674026051242*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"NtildeI", "[", 
+   RowBox[{"i_", ",", "Npart_", ",", "\[Alpha]_"}], "]"}], ":=", 
+  RowBox[{
+   RowBox[{
+    UnderoverscriptBox["\[Sum]", 
+     RowBox[{"j", "=", "1"}], 
+     RowBox[{"i", "-", "1"}]], 
+    SuperscriptBox[
+     RowBox[{"Abs", "[", 
+      RowBox[{"i", "-", "j"}], "]"}], 
+     RowBox[{"-", "\[Alpha]"}]]}], "+", 
+   RowBox[{
+    UnderoverscriptBox["\[Sum]", 
+     RowBox[{"j", "=", 
+      RowBox[{"i", "+", "1"}]}], "Npart"], 
+    SuperscriptBox[
+     RowBox[{"Abs", "[", 
+      RowBox[{"i", "-", "j"}], "]"}], 
+     RowBox[{"-", "\[Alpha]"}]]}]}]}]], "Input",
+ CellChangeTimes->{{3.663677903790929*^9, 3.663677989600556*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Ntilde", "[", 
+   RowBox[{"Npart_", ",", "\[Alpha]_"}], "]"}], ":=", 
+  RowBox[{"N", "[", 
+   RowBox[{
+    FractionBox["1", "Npart"], 
+    RowBox[{
+     UnderoverscriptBox["\[Sum]", 
+      RowBox[{"i", "=", "1"}], "Npart"], 
+     RowBox[{"NtildeI", "[", 
+      RowBox[{"i", ",", "Npart", ",", "\[Alpha]"}], "]"}]}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.6636779980277987`*^9, 3.663678046650179*^9}, {
+   3.663678076686391*^9, 3.663678085590279*^9}, {3.663678150769085*^9, 
+   3.6636781508757668`*^9}, 3.663678334032825*^9, {3.663678387680025*^9, 
+   3.66367838777249*^9}, {3.663681156534852*^9, 3.663681173622548*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Ntilde", "[", 
+  RowBox[{"6", ",", "0.5"}], "]"}]], "Input",
+ CellChangeTimes->{{3.663678050059989*^9, 3.663678055930346*^9}, {
+  3.663678094811204*^9, 3.663678094874176*^9}, {3.663678132072118*^9, 
+  3.663678160236394*^9}, {3.663678363377716*^9, 3.6636783646310472`*^9}, {
+  3.663681136333274*^9, 3.6636811397540827`*^9}}],
+
+Cell[BoxData["3.669230509271675`"], "Output",
+ CellChangeTimes->{{3.663678062359321*^9, 3.663678095358508*^9}, {
+   3.663678133245895*^9, 3.663678161074544*^9}, {3.663678365790474*^9, 
+   3.663678391539371*^9}, 3.663681140615144*^9, 3.663681189385737*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Expand", "[", 
+  RowBox[{"1", "+", 
+   RowBox[{"2", 
+    RowBox[{"(", 
+     RowBox[{"Npart", "-", "2"}], ")"}]}], "+", "1"}], "]"}]], "Input",
+ CellChangeTimes->{{3.663678230616385*^9, 3.6636782532452383`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"-", "2"}], "+", 
+  RowBox[{"2", " ", "Npart"}]}]], "Output",
+ CellChangeTimes->{{3.6636782459422626`*^9, 3.663678253599881*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{"1.82693", "*", 
+   RowBox[{"Sin", "[", 
+    RowBox[{"\[Pi]", "/", "4"}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.6637588578469763`*^9, 3.663758875860598*^9}}],
+
+Cell[BoxData["1.291834591753139`"], "Output",
+ CellChangeTimes->{{3.6637588622792263`*^9, 3.663758876510478*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{"Sin", "[", 
+   RowBox[{"\[Pi]", "/", "4"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.663759727209132*^9, 3.663759740697743*^9}}],
+
+Cell[BoxData["0.7071067811865475`"], "Output",
+ CellChangeTimes->{{3.663759733214663*^9, 3.6637597410502367`*^9}}]
+}, Open  ]]
+},
+WindowSize->{675, 692},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+FrontEndVersion->"10.0 for Linux x86 (64-bit) (June 27, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 124, 2, 32, "Input"],
+Cell[707, 26, 88, 1, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[832, 32, 204, 4, 32, "Input"],
+Cell[1039, 38, 109, 1, 32, "Output"]
+}, Open  ]],
+Cell[1163, 42, 676, 21, 66, "Input"],
+Cell[1842, 65, 662, 16, 65, "Input"],
+Cell[CellGroupData[{
+Cell[2529, 85, 347, 6, 32, "Input"],
+Cell[2879, 93, 255, 3, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3171, 101, 234, 6, 32, "Input"],
+Cell[3408, 109, 163, 4, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3608, 118, 211, 5, 32, "Input"],
+Cell[3822, 125, 113, 1, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3972, 131, 178, 4, 32, "Input"],
+Cell[4153, 137, 114, 1, 65, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
